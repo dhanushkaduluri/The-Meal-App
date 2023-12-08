@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Meta tags for character set and viewport settings -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Linking to external style sheets -->
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- Title of the HTML document -->
+    <title>Meal App</title>
+</head>
+
+<body>
+    <!-- Main container for the content -->
+    <div class="container">
+        <!-- Heading section with a dual heading -->
+        <div class="heading-section">
+            <h2 class="heading1">BORN</h2><h2 class="heading2">HUNGRY...</h2>
+            
+        </div>
+
+        <div class="fav-section">
+            <div class="fav-name">
+                <p id="name-p" onclick="displayFavourites()">Favourites</p>
+            </div>
+        <div class="hidden">
+            <i class="fa fa-close" onclick="hideFav()"></i>
+            <div style="text-align: center;">
+                <p id="name-f">My Favourites</p>
+            </div>
+            <div class="add-fav">
+                
+            </div>
+        </div>
+        </div>
+
+        <!-- Search container with input, button, and search results -->
+        <div class="search-container">
+            <div>
+                <!-- Input for searching meals -->
+                <input type="text" id="searchInput" placeholder="Search for a meal...">
+
+                <!-- Button to trigger the search -->
+                <button type="submit" class="search-btn" id=""><i class="fa fa-search"></i></button>
+
+                <!-- List to display search results -->
+                <ul id="searchResults"></ul>
+            </div>
+        </div>
+
+        <!-- Section for displaying search results, initially hidden -->
+        <div class="visible">
+            <h2>Search Results</h2>
+
+            <!-- Results section with a close button -->
+            <div class="results-section">
+                <i class="fa fa-close" onclick="hideResult()"></i>
+            </div>
+        </div>
+
+        <!-- Section for displaying meal items -->
+        <div class="items-section">
+            <!-- Description for the items section -->
+            <div class="descript">
+                <p>Find Your Favorite Meal Here...</p>
+            </div>
+
+            <!-- Menu containing individual meal items -->
+            <div class="items-menu">
+                
+            </div>
+        </div>
+    </div>
+
+    <!-- Including external JavaScript file -->
+    <script src="function.js"></script>
+</body>
+
+</html>
